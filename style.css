@@ -1,0 +1,72 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        #link {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+        #contact {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .update {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px dashed #ccc;
+            border-radius: 10px;
+        }
+        .forming {
+            text-align: center;
+            color: #333;
+            border-bottom: #45a049 2px solid;
+            border-width: 10px;
+        }
+        .logo {
+            width: 100px;   
+                        }
+        nav ul {
+            list-style-type:none;
+            padding: 0;
+                }
+        nav ul a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav ul a:hover {
+            background-color: #45a049;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer img {
+            width: 50px;
+            height: 50px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
