@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nav Bar and Form Assignment</title>
+    <meta author="Adeoye Oluwatobi" />
+    <meta description="This is an assignment to apply the concepts I've learned about creating a basic navigation bar using Flexbox and styling a simple form using CSS." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <!--Linking the CSS file starts here-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Linking the CSS file ends here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="logo-header">
+        <div class="logo">GoWork</div>
+                <!--The navigation bar starts here-->
+        <nav class="navbar">
+            <ul>
+                <!--The navigation links starts here-->
+                <a href="#solutions">Solutions</a>
+                <a href="#products">Careers</a> 
+                <a href="#industries">Compaines</a>
+                <a href="#network">Networks</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#resources">Resources</a>
+                <!--The navigation links starts here-->
+            </ul> 
+        </nav>
+                <!--The navigation bar ends here-->
+        <div class="access"><button class="free">Try it for free</button> <button class="signin">Sign in</button></div>
+</header>
+<main>
+    <section>
+    <!-- Form starts here-->
+     <div class="logo-form">
+    <div class="support">&#10032; Get Instant Support!</div>
+        <form id="send">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="name here" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="email here" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="message here" rows="4" required></textarea>
+            <button type="submit">Send Now</button>
+    </form>
+</div>
+    <!-- Form starts here-->
+    </section>
+</main>
+</body>
+</html>
