@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+
+        <div id="app">
+            <h1>To Do List</h1>
+            <input type="text" id="newTask" placeholder="Add a new task">
+            <button id="addTask">Add Task</button>
+            <button id="clear">Clear</button>
+            <ul id="tasklist"></ul>
+            
+        </div>
+        <script>
+            const newTaskInput = document.getElementById('newTask');
+            const addButton = document.getElementById('addTask');
+            const taskList = document.getElementById('tasklist');
+                const clearButton = document.getElementById('clear');
+
+            addButton.addEventListener('click', () => {
+                const taskText = newTaskInput.value;
+              
+                    const taskItem = document.createElement('li');
+                    taskItem.textContent = taskText;
+                    taskList.appendChild(taskItem);
+                    newTaskInput.value = '';
+                            });
+
+                            // Strike through completed tasks
+                            taskList.addEventListener('click', (event) => {
+    if (event.target.tagName === 'LI') {
+            const sTag = document.createElement('s');
+            sTag.textContent = event.target.textContent;
+            event.target.replaceWith(sTag);
+        }
+
+                            });
+
+                            // Remove all <s> (completed) tasks
+    clearButton.addEventListener('click', () => {
+        const completedTasks = taskList.querySelectorAll('s');
+        completedTasks.forEach(task => task.remove());
+    });                                          
+
+        </script>
+</body>
+</html>
