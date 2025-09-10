@@ -1,0 +1,53 @@
+/* Step 2: Basic Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Style the main content area */
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+/* Step 3: Gradient Background */
+.intro {
+    background: linear-gradient(#ff7e5f, #feb47b);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.about {
+    background: radial-gradient(blue, purple);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.contact {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+/* Step 4: Advanced Selectors */
+li:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+li:nth-child(even) {
+    background-color: #c0c0c0;
+}
+
